@@ -1,0 +1,16 @@
+<div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Análise de crédito</h1>
+      </div>
+      <div class="modal-body d-flex flex-column align-items-center mt-4">
+          <span [class]="statusClass + ' fs-3 fw-bolder'"> {{ status }}</span>
+          <p>Score: {{ score }}</p>
+      </div>
+      <div class="modal-footer">
+        <button mat-raised-button class="rounded-4 text-primary" data-bs-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,27 +1,57 @@
-# DocnixCase
+# Docnix Case
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.11.
+**Autor**: Erick Melo Vidal de Oliveira
 
-## Development server
+## Sobre 
+O objetivo deste é realizar o teste case da empresa Docnix, que possui o seguionte enunciado:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Elabore um cadastro de cliente onde temos dados pessoais, dados de pagamento e analise
+de credito, onde será analisado o score (não é necessário uma consulta real de score, o
+dado deve ser mockado), onde será analisado da seguinte forma:
 
-## Code scaffolding
+ - Abaixo de 500 - Inapto
+ - 500 a 800 - Apto com Limitações
+ - Acima de 800 Totalmente Apto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Screenshots
 
-## Build
+![Screenshot from 2025-01-08 12-17-56](https://github.com/user-attachments/assets/23806572-3ee9-45b8-87bf-2c7b9d018e1b)
+![Screenshot from 2025-01-08 12-19-13](https://github.com/user-attachments/assets/fce8a4a1-fd1c-4bd9-b001-00680632eadd)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Instalação 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Pré-requisitos:
+Para rodar o projeto é necessário ter instalado o framework [Angular 17](https://v17.angular.io/guide/setup-local) na máquina.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Iniciando o porjeto
+Para rodar o código, primeiro clone este repositório em um diretório de sua preferência com o git
 
-## Further help
+```
+git clone https://github.com/ErickMVdO/docnix-case.git
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Em seguida acesse a pasta do código no repositório clonado
+
+```
+cd docnix-case
+```
+
+Instale as dependencias do projeto
+
+```
+npm install
+```
+
+Agora, para executar o projeto basta executar o comando
+
+```
+ng serve --open
+```
+
+Ou o comando abaixo para executar os testes
+
+```
+ng test
+```

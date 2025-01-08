@@ -1,0 +1,41 @@
+<div>
+  <h2>Dados do Pagamento</h2>
+  <form class="d-flex flex-column gap-2" [formGroup]="pagamentoForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Número do cartão</mat-label>
+      <input
+        matInput
+        formControlName='numeroCartao'
+        required
+        mask="0000 0000 0000 0000"
+      />
+      <mat-error *ngIf="isFieldInvalid('numeroCartao')">
+        {{getErrorMessage('numeroCartao')}}
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Validade</mat-label>
+      <input
+        matInput
+        formControlName='validade'
+        required
+        mask="00/00"
+      />
+      <mat-error *ngIf="isFieldInvalid('validade')">
+        {{getErrorMessage('validade')}}
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>CVV</mat-label>
+      <input
+        matInput
+        formControlName='cvv'
+        required
+        mask="000"
+      />
+      <mat-error *ngIf="isFieldInvalid('cvv')">
+        {{getErrorMessage('cvv')}}
+      </mat-error>
+    </mat-form-field>
+  </form>
+</div>

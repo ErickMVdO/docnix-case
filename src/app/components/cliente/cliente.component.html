@@ -1,0 +1,54 @@
+<div>
+  <h2>Cadastro de Cliente</h2>
+  <form class="d-flex flex-column gap-2" [formGroup]="dadosPessoaisForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Nome</mat-label>
+        <input
+          matInput
+          formControlName="nome"
+          required
+        />
+        <mat-error *ngIf="inputHasError('nome')">
+          {{errorMensageName}}
+        </mat-error>
+      </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        formControlName='email'
+        required
+        />
+        <mat-error *ngIf="inputHasError('email')">
+          {{errorMensageEmail}}
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>CPF</mat-label>
+      <input
+        matInput
+        formControlName='cpf'
+        required
+        mask="000.000.000-00"
+      />
+      <mat-error *ngIf="inputHasError('cpf')"> 
+        {{errorMensageCpf}} 
+      </mat-error>
+      
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Data de nascimento</mat-label>
+      <input 
+        matInput 
+        formControlName="dataNascimento" 
+        required 
+        [matDatepicker]="dp"
+      >
+      <mat-datepicker-toggle matIconSuffix [for]="dp"></mat-datepicker-toggle>
+      <mat-datepicker #dp></mat-datepicker>
+      <mat-error *ngIf="inputHasError('dataNascimento')">
+        {{errorMensageDate}}
+      </mat-error>
+    </mat-form-field>
+  </form>
+</div>
