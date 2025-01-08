@@ -3,7 +3,7 @@
 **Autor**: Erick Melo Vidal de Oliveira
 
 ## Sobre 
-O objetivo deste é realizar o teste case da empresa Docnix, que possui o seguionte enunciado:
+O objetivo deste projeto é realizar o teste case da empresa Docnix, que possui o seguinte enunciado:
 
 Elabore um cadastro de cliente onde temos dados pessoais, dados de pagamento e analise
 de credito, onde será analisado o score (não é necessário uma consulta real de score, o
@@ -50,7 +50,7 @@ Agora, para executar o projeto basta executar o comando
 ng serve --open
 ```
 
-Ou o comando abaixo para executar os testes
+Também é possível executar os testes com o comando
 
 ```
 ng test
